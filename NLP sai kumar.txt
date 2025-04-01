@@ -1,0 +1,81 @@
+NLP --step1
+
+Tools (NLTK) & spaCy
+
+Tokenization : Tokenization is the process of breaking down text into smaller units, called tokens, which can be words, sentences, or even characters, making it easier for computers to process and analyze. 
+
+example:Word Tokenization:
+Splits text into individual words.
+Example: "The cat sat on the mat" becomes ["The", "cat", "sat", "on", "the", "mat"].
+
+Sentence Tokenization:
+Splits text into sentences.
+Example: "The cat sat on the mat. The dog barked." becomes ["The cat sat on the mat.", "The dog barked."].
+
+
+Character Tokenization:
+Treats each character as a separate token.
+Example: "Tokenization" becomes ["T", "o", "k", "e", "n", "i", "z", "a", "t", "i", "o", "n"].
+
+Subword Tokenization:
+Breaks down words into smaller units (subwords or morphemes).
+Example: "playing" might be tokenized as ["play", "-ing"].
+
+
+STOP WORDS --step2
+
+In Natural Language Processing (NLP), stop words are common words (like "a," "the," "is") that are often filtered out during text processing because they contribute little to the meaning of a sentence. 
+
+>>Examples of Stop Words (English):
+
+Articles: "a," "an," "the"
+Prepositions: "in," "on," "at," "with"
+Conjunctions: "and," "but," "or"
+Pronouns: "I," "he," "she," "it"
+Common verbs: "is," "am," "are," "was," "were"
+Other: "to," "of," "for," "and," "as," "at," "by," "from".
+
+
+
+TF-IDF  --step3
+
+In Natural Language Processing (NLP), TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical statistic that reflects how important a word is to a document in a collection or corpus, often used for text mining and information retrieval. It's calculated by multiplying term frequency (TF) with inverse document frequency (IDF). 
+
+TF-IDF is widely used in text mining, information retrieval, and natural language processing to rank and select keywords, for example, in search engines or document clustering.
+
+Example: If the word "apple" appears 5 times in a document with 100 words, the TF of "apple" is 5/100 = 0.05. 
+
+ IDF=total number of documents/documents with term
+
+TFxIDF= Frequency ( Importance of that word --Which provides information-- --helps in key word selection )
+
+
+BoW (Bag of Words)  --step3.1 (Best for email spam Detection)
+
+Bag of Words converts text into numeric form by counting the frequency of each word in a document and representing this information as a vector. This allows machine learning models to process and learn patterns from textual data effectively.
+..ML models can be modeled on numeric data not on categorical data so BoW helps in making that conversion by frequency of each word in each document. Finally converts into vector form for each document..
+
+
+Word2Vec
+
+In Natural Language Processing (NLP), "Word2Vec" is a technique that represents words as vectors in a multi-dimensional space, where words with similar meanings are located closer together. This allows computers to understand semantic relationships between words, like "king" and "queen" or "Paris" and "France". 
+
+Imagine you have a corpus of text like: "The king sat on the throne., "The queen sat on the throne., "The prince was in the palace., and "The princess was in the palace..
+
+>>Word2Vec would learn to represent: 
+
+"king" and "queen" as being relatively close in the vector space (because they appear in similar contexts).
+"prince" and "princess" as being relatively close in the vector space (because they appear in similar contexts).
+
+
+
+
+
+
+
+
+
+
+
+
+
